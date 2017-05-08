@@ -8,7 +8,8 @@
 </head>
 
 <body>
-<h1>リスト</h1>
+
+  <h1>リスト</h1>
   <h2>最近食べたもの</h2>
   <ul>
     <li>コーヒーゼリー</li>
@@ -38,6 +39,50 @@
   <p>「この文章の内容に意味はないただ<br>改行され、それっぽい言葉を強調するだけ…<strong>君は知っていたんだろう？</strong>」</p>
   
   <h1>オーディオコーナー</h1>
-  <p><audio src="" width="280" controls autoplay>audio要素をサポートしていないブラウザで閲覧されています。ほかのブラウザでご覧ください。</audio></p>
-</body>
+  <p><audio src="" controls>audio要素をサポートしていないブラウザで閲覧されています。ほかのブラウザでご覧ください。</audio></p>
+
+  <h1>表組み</h1>
+  <table>
+    <tr><th>品名</th><th>分類</th><th>好感度(5段階)</th></tr>
+    <tr><td>コーヒーゼリー</td><td>甘味系</td><td>５</td></tr>
+    <tr><td>じゃがりこ</td><td>スナック</td><td>4.5</td></tr>
+    <tr><td>カフェオレ</td><td>飲料</td><td>５</td></tr>
+    <tr><td>ポテトチップスのり塩</td><td>スナック</td><td>3.5</td></tr>
+    <tr><td>ジャイアントコーン</td><td>アイス</td><td>４</td></tr>
+  </table>
+  
+　　<h1>フォーム</h1>
+  　<h2>自由記入欄</h2>
+  <form id="top" action="#" methond="post">
+    <p>テキストボックス<input type="text" name="input1"></p>
+    <p><input type="submit" value="送信"><input type="reset" value="取り消し"></p>
+    
+    <p>好きな色は？
+      <input type="radio" name="input2" value="red" checked>赤
+      <input type="radio" name="input2" value="blue">青
+      <input type="radio" name="input2" value="green">緑
+    </p>
+    <p>好きな色は？
+      <input type="checkbox" name="input3" value="red" checked>赤
+      <input type="checkbox" name="input3" value="blue">青
+      <input type="checkbox" name="input3" value="green">緑
+      <input type="checkbox" name="input3" value="yellow">黄色
+    </p>
+    <p>好きな色は？
+      <select name="input4">
+        <option value="red" serected>赤
+        <option value="blue">青
+        <option value="green">緑
+        <option value="yellow">黄色
+      </select></p>
+    
+        <p>好きな色は？
+      <select name="input5" multiple>
+        <option value="red" serected>赤
+        <option value="blue">青
+        <option value="green">緑
+        <option value="yellow">黄色
+      </select></p>
+  </form>
+  </body>
 </html>
